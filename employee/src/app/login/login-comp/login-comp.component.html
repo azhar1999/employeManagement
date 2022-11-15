@@ -1,0 +1,10 @@
+
+<div class="login">
+    <form class="form" [formGroup]="formgroup" (ngSubmit)="submit()">
+        <label>username:</label>
+        <input class="inputUsername" formControlName="username" placeholder="username" type="text"><br>
+        <label>password:</label>
+        <input class="inputPassword" formControlName="password" placeholder="password" type="password" ><br>
+        <button type="submit" [disabled]="this.formgroup.invalid">Submit</button><br>
+    </form>
+</div>

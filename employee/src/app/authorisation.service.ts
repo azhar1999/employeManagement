@@ -43,6 +43,7 @@ export class AuthorisationService {
   }
 
   logout() {
+    alert("You have succesfully logged out from current account")
     localStorage.removeItem('currentUser')
   }
 

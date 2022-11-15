@@ -18,9 +18,6 @@ export class LoginCompComponent implements OnInit {
   credentials:any={
     username:'',
     password:''}
-  
-  
-
   constructor(private router:Router,private authService:AuthorisationService) { }
 
   ngOnInit(): void {

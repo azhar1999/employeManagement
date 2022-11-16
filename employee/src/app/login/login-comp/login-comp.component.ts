@@ -31,8 +31,9 @@ export class LoginCompComponent implements OnInit {
     
     this.credentials.username=this.formgroup.value.username
     this.credentials.password=this.formgroup.value.password
+
     this.authService.login(this.credentials).subscribe(result=>{
-      console.log(result)
+      
     if (result){
 
       this.router.navigate(['/employeeList',this.formgroup.value.username])}

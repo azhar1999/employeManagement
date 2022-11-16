@@ -18,6 +18,7 @@ export class AuthorisationService {
       this.getArray=result
     })
     
+    
     for (var i = 0; i < this.getArray.length; i++) {
 
       const b = this.getArray[i];
